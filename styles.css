@@ -61,4 +61,10 @@ h2 {
 .footer {
     text-align: right;
     margin: auto 2% auto auto;
+    font-family: "CustomFont";
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("./fonts/spring.woff")
 }
