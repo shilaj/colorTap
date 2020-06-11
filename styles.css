@@ -57,3 +57,8 @@ h2 {
 .g {
     background-color: green;
 }
+
+.footer {
+    text-align: right;
+    margin: auto 2% auto auto;
+}
