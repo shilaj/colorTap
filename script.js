@@ -36,7 +36,7 @@ function gameOverCheck() {
             $("body").removeClass("gameOverbody");
         }, 150)
         wrong.play();
-        $(".playReset").css("font-size", "2vw")
+        $(".playReset").css("font-size", "3vw")
         $(".playReset").text("Refresh the page to play Again !! ")
     }
 }
