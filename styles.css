@@ -3,6 +3,10 @@ body {
     background-color: rgb(216, 183, 123);
 }
 
+.gameOverbody {
+    background-color: red;
+}
+
 .normal {
     width: 10rem;
     height: 10rem;
