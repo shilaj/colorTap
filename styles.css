@@ -30,9 +30,9 @@ button:focus {
     margin-bottom: 2rem;
 }
 
-.play,
-.reset {
-    margin: 0 1rem 0 auto;
+.playReset {
+    margin: 0 1rem 1vh auto;
+    font-family: 'Metal Mania', cursive;
 }
 
 h1 {
