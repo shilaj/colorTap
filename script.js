@@ -30,14 +30,15 @@ function gameOverCheck() {
     if (gameOverBoolean) {
         $("h1").css("color", "black")
         $("h1").text("Game Over !");
+        $(".message").css("visibility", "hidden")
         $(".normal").click(colorButtonClickAnimation);
         $("body").addClass("gameOverbody");
         setTimeout(function() {
             $("body").removeClass("gameOverbody");
         }, 150)
         wrong.play();
-        $(".playReset").css("font-size", "3vw")
-        $(".playReset").text("Refresh the page to play Again !! ")
+        // $(".footerMessage").css("font-size", "")
+        $(".footerMessage").text("Refresh the page to play Again !! ")
     }
 }
 

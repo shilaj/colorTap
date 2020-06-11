@@ -30,7 +30,8 @@ button:focus {
     margin-bottom: 2rem;
 }
 
-.playReset {
+.footerMessage,
+.play {
     margin: 0 1rem 1vh auto;
     font-family: 'Metal Mania', cursive;
 }
@@ -68,7 +69,20 @@ h2 {
     font-family: "CustomFont";
 }
 
+.footerMessage {
+    font-size: 2rem;
+}
+
 @font-face {
     font-family: "CustomFont";
     src: url("./fonts/spring.woff")
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    .footerMessage {
+        font-size: 2rem;
+    }
 }
