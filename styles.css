@@ -86,6 +86,10 @@ h2 {
     font-family: "CustomFont";
 }
 
+.footerMessage {
+    font-size: 3rem;
+}
+
 @font-face {
     font-family: "CustomFont";
     src: url("./fonts/spring.woff")
