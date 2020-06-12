@@ -10,7 +10,8 @@ body {
 .normal {
     width: 10rem;
     height: 10rem;
-    margin: 1rem;
+    /* margin: 1rem; */
+    margin: 0 0.5rem;
     font-size: 3rem;
     border: 5px solid black;
     border-radius: 10%;
@@ -19,6 +20,22 @@ body {
 
 button:focus {
     outline: 0 !important;
+}
+
+.messageButton {
+    margin: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    /* transition-property: border;
+    transition-duration: 1s;
+    transition-timing-function: ease-in; */
+}
+
+.messageButton.messageButtonTransition {
+    border: 2px solid white !important;
+    /* border-radius: 0% !important; */
 }
 
 .controlledNormalButtons {
@@ -69,20 +86,35 @@ h2 {
     font-family: "CustomFont";
 }
 
-.footerMessage {
-    font-size: 2rem;
-}
-
 @font-face {
     font-family: "CustomFont";
     src: url("./fonts/spring.woff")
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (min-width:300px) and (max-width:600px) {
     h1 {
         font-size: 4.5rem;
     }
     .footerMessage {
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .normal {
+        width: 8rem;
+        height: 8rem;
+        /* margin: 1rem; */
+        margin: 0 0.5rem;
+        font-size: 2rem;
+        border: 5px solid black;
+        border-radius: 10%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .footerMessage {
+        font-size: 1.7rem;
     }
 }

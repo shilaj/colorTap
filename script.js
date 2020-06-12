@@ -30,7 +30,7 @@ function gameOverCheck() {
     if (gameOverBoolean) {
         $("h1").css("color", "black")
         $("h1").text("Game Over !");
-        $(".message").css("visibility", "hidden")
+        // $(".message").css("visibility", "hidden")
         $(".normal").click(colorButtonClickAnimation);
         $("body").addClass("gameOverbody");
         setTimeout(function() {
@@ -82,7 +82,7 @@ function gamePlay(dateStored) {
                 if (($("h1").css("color") === $(this).css("background-color")) || textCheck(this)) {
 
                     score++;
-                    $(".message").text("Press button within " + (levelCheck(score) / 1000) + " sec !").fadeIn(100).fadeOut(100).fadeIn(100)
+                    $(".messageButton").text((levelCheck(score) / 1000) + "sec").fadeIn(100).fadeOut(100).fadeIn(100)
                     success.play();
                     $(".score").text(score);
                     changingColorHeading();
@@ -97,7 +97,10 @@ function gamePlay(dateStored) {
         }
         gameOverCheck();
     })
-
 }
 colorButtonClickAnimation();
 playGame();
+
+// $(".messageButton").click(function() {
+//     $(".messageButton").addClass("messageButtonTransition");
+// })
