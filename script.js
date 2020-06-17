@@ -51,7 +51,7 @@ function gameOverCheck() {
         }, 150)
         wrong.play();
         // $(".footerMessage").css("font-size", "")
-        $(".footerMessage").text("Refresh the page to play Again !! ")
+        $(".footerMessage").text("Refresh ! to play Again ! ")
     }
 }
 
