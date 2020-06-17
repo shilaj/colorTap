@@ -37,7 +37,7 @@ button:focus {
 @keyframes timeOutAnimation {
     from {
         background-color: turquoise;
-        width: 40vw;
+        width: 30vw;
     }
     to {
         background-color: white;
@@ -47,9 +47,9 @@ button:focus {
 
 .timeOut {
     text-align: center;
-    margin-left: 30%;
+    margin-left: 35%;
     height: 5vh;
-    width: 40vw;
+    width: 30vw;
     background-color: turquoise;
     animation-timing-function: linear;
 }
@@ -126,12 +126,26 @@ h2 {
     src: url("./fonts/spring.woff")
 }
 
-@media only screen and (min-width:300px) and (max-width:600px) {
+@media only screen and (min-width:300px) and (max-width:700px) {
     h1 {
         font-size: 4.5rem;
     }
     .footerMessage {
         font-size: 2rem;
+    }
+    @keyframes timeOutAnimation {
+        from {
+            background-color: turquoise;
+            width: 80vw;
+        }
+        to {
+            background-color: white;
+            width: 0;
+        }
+    }
+    .timeOut {
+        width: 80vw;
+        margin-left: 10%;
     }
 }
 
@@ -140,7 +154,7 @@ h2 {
         width: 8rem;
         height: 8rem;
         /* margin: 1rem; */
-        margin: 0 0.5rem;
+        margin: 0.5rem;
         font-size: 2rem;
         border: 5px solid black;
         border-radius: 10%;
@@ -151,5 +165,19 @@ h2 {
     }
     .footerMessage {
         font-size: 1.7rem;
+    }
+    @keyframes timeOutAnimation {
+        from {
+            background-color: turquoise;
+            width: 80vw;
+        }
+        to {
+            background-color: white;
+            width: 0;
+        }
+    }
+    .timeOut {
+        width: 80vw;
+        margin-left: 10%;
     }
 }
