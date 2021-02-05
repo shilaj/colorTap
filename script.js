@@ -51,7 +51,7 @@ function gameOverCheck() {
         }, 150)
         wrong.play();
         // $(".footerMessage").css("font-size", "")
-        $(".footerMessage").text("Refresh ! to play Again ! ")
+        // $(".footerMessage").text("Refresh,to play Again ! ")
     }
 }
 
@@ -126,7 +126,10 @@ function gamePlay(dateStored) {
 }
 colorButtonClickAnimation();
 playGame();
-
+$(".refresh").click(function()
+{
+    window.location.reload("Refresh");
+})
 // $(".messageButton").click(function() {
 //     $(".messageButton").addClass("messageButtonTransition");
 // })
